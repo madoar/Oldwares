@@ -1,8 +1,8 @@
 include(["Functions", "QuickScript", "ZipScript"]);
 
 new ZipScript()
-    .name("Prehistorik")
-    .editor("Titus")
+    .name("Xenon 2")
+    .editor("")
     .applicationHomepage("")
     .author("Quentin PÂRIS")
     .url("http://repository.playonlinux.com/divers/oldware/Xenon2.zip")
