@@ -11,6 +11,6 @@ new ZipScript()
     .executable("RASHME.EXE")
     .postInstall(function(wine, wizard) {
         var registryFile = Bean("fileSearcher").search(wine.prefixDirectory, "RASH.REG");
-        wine.regedit().open(registryFile);
+        wine.regedit().open([registryFile]);
     })
     .go();
