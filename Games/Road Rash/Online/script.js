@@ -10,7 +10,7 @@ new ZipScript()
     .category("Games")
     .executable("RASHME.EXE")
     .postInstall(function(wine, wizard) {
-        var registryFile = Bean("fileSearcher").search(wine.prefixDirectory, "RASH.REG");
-        wine.regedit().patch(cat(registryFile));
+        var registryFile = Bean("fileSearcher").search(wine.prefixDirectory, "RASH.REG")
+        wine.regedit().open(registryFile[0]);
     })
     .go();
